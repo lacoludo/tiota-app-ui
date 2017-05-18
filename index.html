@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+		<!-- Metadata -->
+		<meta charset="UTF-8">
+		<meta name="description" content="Le nouveau covoiturage scolaire - Révolutionner le transport en milieu rural">
+		<meta name="keywords" content="tiota">
+		<meta name="author" content="KHODABUKUS Irfaan, LACOUTURE Ludovic">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Title -->
+    <title>Tiota</title>
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="img/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#f50057">
+		<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#f50057">
+
+		<!-- CSS library -->
+		<!-- Material Icons -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+		<!-- Materialize -->
+		<link rel="stylesheet" type="text/css" href="css/materialize/materialize.min.css"  media="screen,projection"/>
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css" integrity="sha256-6DQKO56c9MZL0LAc7QNtxqJyqSa3rS9Gq5FVcIhtA+w=" crossorigin="anonymous" /> -->
+
+		<!-- CSS personal -->
+    <link rel="stylesheet" type="text/css" href="css/tiota.min.css">
+</head>
+
+<body>
+		<div class="container">
+				<div class="row">
+						<ul class="tabs z-depth-1">
+								<li class="tab col s4">
+										<a href="#profil">Profil</a>
+								</li>
+								<li class="tab col s4">
+										<a href="#accueil" class="active">Accueil</a>
+								</li>
+								<li class="tab col s4">
+										<a href="#notifications">Notifications</a>
+								</li>
+						</ul>
+				</div>
+				<div id="profil">
+						<div class="row">
+						    <form class="col s12 background-color z-depth-1">
+										<div class="row">
+										    <div class="input-field col s6">
+														<i class="material-icons prefix">account_circle</i>
+										        <input value="Priyanka" id="first-name" type="text" class="validate">
+										        <label class="active" for="first-name">Prénom</label>
+										    </div>
+										    <div class="input-field col s6">
+														<i class="material-icons prefix">account_box</i>
+										        <input value="Chopra" id="last-name" type="text" class="validate">
+										        <label class="active" for="last-name">Nom</label>
+										    </div>
+										</div>
+										<div class="row">
+												<div class="input-field col s6">
+														<i class="material-icons prefix">smartphone</i>
+														<input value="01 23 45 67 89" id="mobile-number" type="tel" class="validate">
+														<label class="active" for="mobile-number">Numéro portable</label>
+												</div>
+												<div class="input-field col s6">
+														<i class="material-icons prefix">phone</i>
+														<input id="home-number" type="tel" class="validate">
+														<label for="home-number">Numéro domicile</label>
+												</div>
+										</div>
+										<div class="row">
+												<div class="input-field col s6">
+														<i class="material-icons prefix">mail</i>
+														<input value="priyankachopra@bollywood.com" id="email" type="email" class="validate">
+														<label class="active" for="email">Courriel</label>
+												</div>
+												<div class="input-field col s6">
+														<i class="material-icons prefix">mail_outline</i>
+														<input id="confirm-email" type="email" class="validate">
+														<label for="confirm-email">Nouveau courriel</label>
+												</div>
+										</div>
+										<div class="row">
+										    <div class="input-field col s6">
+														<i class="material-icons prefix">vpn_key</i>
+										        <input id="password" type="password" class="validate">
+										        <label for="password">MdP actuel</label>
+										    </div>
+												<div class="input-field col s6">
+														<i class="material-icons prefix">vpn_key</i>
+														<input id="new-password" type="password" class="validate">
+														<label for="new-password">Nouveau MdP</label>
+												</div>
+												<div class="input-field col s6">
+														<i class="material-icons prefix">vpn_key</i>
+														<input id="confirm-password" type="password" class="validate">
+														<label for="confirm-password">Confirmez MdP</label>
+												</div>
+										</div>
+										<div class="row">
+												<div class="input-field col s12">
+														<div class="file-field input-field">
+														    <div class="waves-effect waves-light btn rounded pink accent-3">
+														        <span>
+																				<i class="material-icons">file_upload</i>
+																				Photo
+																		</span>
+														        <input type="file">
+														    </div>
+														    <div class="file-path-wrapper">
+														        <input class="file-path validate" type="text">
+														    </div>
+														</div>
+												</div>
+										</div>
+										<div class="row">
+												<div class="center">
+														<a class="waves-effect waves-light btn rounded pink accent-3">Valider</a>
+												</div>
+										</div>
+								</form>
+					  </div>
+				</div>
+				<div id="accueil">
+						<div class="row">
+								<div class="row">
+										<div class="col s6 offset-s3">
+												<div class="center">
+														<img src="img/priyanka.jpg" class="responsive-img circle">
+														<h5>Priyanka Chopra</h5>
+														<i>Mumbai</i>
+												</div>
+										</div>
+								</div>
+								<div class="row">
+										<div class="col s12">
+												<div class="center">
+														<a class="modal-trigger waves-effect waves-light btn rounded pink accent-3" data-target="proposer-un-trajet">Proposer un trajet</a>
+														<a class="waves-effect waves-light btn rounded pink accent-3 disabled" data-target="urgence">Urgence</a>
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="row">
+								<ul class="tabs center background-color-inherit">
+		    		        <li class="tab">
+		                    <a class="active" href="#matin">Matin</a>
+		                </li>
+		    		        <li class="tab">
+		                    <a href="#apres-midi">Après-midi</a>
+		                </li>
+		      		  </ul>
+								<div class="row">
+										<div id="matin">
+		  						      <ul class="collapsible" data-collapsible="accordion">
+		  						          <li>
+																<div class="collapsible-header">
+																		<span class="new badge">1€</span>
+																		<img src="img/deepika.jpg" alt="" class="collection-item circle">
+																		Deepika Padukone
+																		<span class="badge">07:10</span>
+																</div>
+														    <div class="collapsible-body">
+																		<p>Lorem ipsum dolor sit amet.</p>
+																</div>
+		  						          </li>
+		  						          <li>
+		  						              <div class="collapsible-header">
+																		<span class="new badge">2€</span>
+																		<img src="img/no-photo.png" alt="" class="collection-item circle">
+		                                Kareena Kapoor
+		                                <span class="badge">07:20</span>
+		                            </div>
+		  						              <div class="collapsible-body">
+		                                <span>Lorem ipsum dolor sit amet.</span>
+		                            </div>
+		  						          </li>
+		        						    <li>
+		        						        <div class="collapsible-header">
+																		<span class="new badge">4€</span>
+																		<img src="img/katrina.jpg" alt="" class="collection-item circle">
+		                                Katrina Kaif
+		                                <span class="badge">07:40</span>
+		                            </div>
+		        						        <div class="collapsible-body">
+		                                <span>Lorem ipsum dolor sit amet.</span>
+		                            </div>
+		        						    </li>
+														<li>
+																<div class="collapsible-header">
+																		<span class="new badge">5€</span>
+																		<img src="img/no-photo.png" alt="" class="collection-item circle">
+																		Anushka Sharma
+																		<span class="badge">07:50</span>
+																</div>
+														    <div class="collapsible-body">
+																		<p>Lorem ipsum dolor sit amet.</p>
+																</div>
+		  						          </li>
+		  						          <li>
+		  						              <div class="collapsible-header">
+																		<span class="new badge">6€</span>
+																		<img src="img/bipasha.jpg" alt="" class="collection-item circle">
+		                                Bipasha Basu
+		                                <span class="badge">08:00</span>
+		                            </div>
+		  						              <div class="collapsible-body">
+		                                <span>Lorem ipsum dolor sit amet.</span>
+		                            </div>
+		  						          </li>
+		        						    <li>
+		        						        <div class="collapsible-header">
+																		<span class="new badge">7€</span>
+																		<img src="img/no-photo.png" alt="" class="collection-item circle">
+		                                Sonakshi Sinha
+		                                <span class="badge">08:10</span>
+		                            </div>
+		        						        <div class="collapsible-body">
+		                                <span>Lorem ipsum dolor sit amet.</span>
+		                            </div>
+		        						    </li>
+												</ul>
+				    		    </div>
+				    		    <div id="apres-midi">
+												<ul class="collapsible" data-collapsible="accordion">
+														<li>
+																<div class="collapsible-header">
+																		<span class="new badge">8€</span>
+																		<img src="img/no-photo.png" alt="" class="collection-item circle">
+																		Kangana Ranaut
+																		<span class="badge">17:20</span>
+																</div>
+																<div class="collapsible-body">
+																		<p>Lorem ipsum dolor sit amet.</p>
+																</div>
+														</li>
+														<li>
+																<div class="collapsible-header">
+																		<span class="new badge">9€</span>
+																		<img src="img/no-photo.png" alt="" class="collection-item circle">
+																		Vidya Balan
+																		<span class="badge">17:30</span>
+																</div>
+																<div class="collapsible-body">
+																		<span>Lorem ipsum dolor sit amet.</span>
+																</div>
+														</li>
+														<li>
+																<div class="collapsible-header">
+																		<span class="new badge">10€</span>
+																		<img src="img/sonam.jpg" alt="" class="collection-item circle">
+																		Sonam Kapoor
+																		<span class="badge">17:40</span>
+																</div>
+																<div class="collapsible-body">
+																		<span>Lorem ipsum dolor sit amet.</span>
+																</div>
+														</li>
+												</ul>
+				    		    </div>
+								</div>
+						</div>
+				</div>
+				<div id="notifications">
+						<ul class="collapsible" data-collapsible="accordion">
+							  <li>
+								    <div class="collapsible-header">
+												<span class="new badge">1</span>
+												<i class="material-icons">directions_car</i>
+												Mes trajets
+										</div>
+								    <div class="collapsible-body">
+												<span class="new badge">7€</span>
+												<span class="title">Trajet du 16 Septembre</span>
+												<p>
+														Givrand > Saint Gilles
+														<br>
+														2 enfants
+												</p>
+										</div>
+							  </li>
+							  <li>
+								    <div class="collapsible-header">
+												<span class="badge">0</span>
+												<i class="material-icons">email</i>
+												Mes messages
+										</div>
+								    <div class="collapsible-body">
+												<p>Lorem ipsum dolor sit amet.</p>
+										</div>
+							  </li>
+						</ul>
+				</div>
+		</div>
+
+		<div id="proposer-un-trajet" class="modal modal-fixed-footer">
+				<div class="modal-content">
+						<h4>Proposer un trajet</h4>
+						<div class="row">
+								<form class="col s12">
+										<div class="row">
+												<div class="input-field col s12">
+														<i class="material-icons prefix">directions</i>
+														<input id="travel" type="text" class="validate">
+														<label for="travel">Trajet</label>
+												</div>
+										</div>
+										<div class="row">
+												<div class="input-field col s6">
+														<i class="material-icons prefix">linear_scale</i>
+														<input id="from-date" type="text" class="validate">
+														<label for="from-date">Du</label>
+												</div>
+												<div class="input-field col s6">
+														<i class="material-icons prefix">date_range</i>
+														<input id="to-date" type="text" class="validate">
+														<label for="to-date">Au</label>
+												</div>
+										</div>
+										<div class="row">
+												<div class="input-field col s6">
+														<i class="material-icons prefix">airline_seat_recline_normal</i>
+														<input id="seats" type="number" class="validate">
+														<label for="seats">Places</label>
+												</div>
+												<div class="input-field col s6">
+														<i class="material-icons prefix">euro_symbol</i>
+														<input id="rate" type="number" class="validate">
+														<label for="rate">Prix</label>
+												</div>
+										</div>
+										<div class="row">
+												<div class="input-field col s12">
+														<i class="material-icons prefix">speaker_notes</i>
+														<textarea id="description" class="materialize-textarea"></textarea>
+														<label for="description">Description</label>
+												</div>
+										</div>
+								</form>
+						</div>
+				</div>
+				<div class="modal-footer">
+						<a href="" class="modal-action modal-close waves-effect waves-light btn rounded pink accent-3">Publier</a>
+				</div>
+		</div>
+		<div id="urgence" class="modal modal-fixed-footer">
+				<div class="modal-content">
+						<h4>Urgence</h4>
+				</div>
+				<div class="modal-footer">
+						<a href="" class="modal-action modal-close waves-effect waves-light btn rounded pink accent-3">Publier</a>
+				</div>
+		</div>
+
+		<!-- JS library -->
+		<!-- jQuery -->
+		<script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>		 -->
+		<!-- Materialize -->
+		<script type="text/javascript" src="js/materialize/materialize.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js" integrity="sha256-ToPQhpo/E89yaCd7+V8LUCjobNRkjilRXfho6x3twLU=" crossorigin="anonymous"></script> -->
+
+		<!-- JS personal -->
+		<script type="text/javascript" src="js/tiota.min.js"></script>
+</body>
+
+</html>
